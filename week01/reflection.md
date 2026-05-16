@@ -1,0 +1,3 @@
+# Architecture Reflection
+
+HEAD is a pointer to a reference, usually a branch under `.git/refs/heads/`, and that reference points to a commit. which points to a tree and stores metadata such as the author, committer, parent commit hashes, and commit message. trees represent a directory and contain references to blobs and other trees. Blobs store the actual contents of files without filenames or metadata. Walking through the commits made understand that git is fundementally a database of objects pointing to each other using hashes.
