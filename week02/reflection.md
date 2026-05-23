@@ -5,3 +5,7 @@ And it got Merged!!! more details in [this PR](https://github.com/rust-lang/rust
 
 ### Second Pull Request
 I also contributed to the [tdlr project](https://github.com/tldr-pages/tldr), which is collaborative cheatsheets for console commands and community-maintained help pages for command-line tools. I added arabic translation for the scp command, which is a command-line utility for securely copying files and directories between hosts on a network. More details in [this PR](https://github.com/tldr-pages/tldr/pull/22533)
+
+### Review Commments
+I found a pull request in the [tdlr project](https://github.com/tldr-pages/tldr), that adds a new page for the `niri` which is a scrollable-tiling Wayland compositor. The [pr](https://github.com/tldr-pages/tldr/pull/22534) follows the template and is correct, but has a margin for improvement. I suggested to add better examples for the `niri` command, and to clarify a parameter in the description.
+The contributor responded (by commits) to my comments and made the necessary changes.
