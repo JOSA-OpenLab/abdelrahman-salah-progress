@@ -10,7 +10,7 @@ astUtils.isSpecificId(nodeToCheck, "NaN") ||
 astUtils.isSpecificMemberAccess(nodeToCheck, "Number", "NaN")
 ```
 The helpers check identifier names and AST shape, but I did not find scope resolution in this path. That seems consistent with the false positive: local bindings named `NaN` or `Number` are treated the same as references to the global built-ins.
-
+the maintainer accepted the reproduction and is open for contribution on this bug. 
 
 Then I found an issue on the [rust analyzer project](https://github.com/rust-lang/rust-analyzer) where a user reports a false positive in the macro matcher using optional or zero-or-more repetition reports false diagnostics [issue](https://github.com/rust-lang/rust-analyzer/issues/22431).
 
