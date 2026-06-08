@@ -19,5 +19,7 @@ I was able to reproduce the issue locally and confirm that it was indeed a bug s
 # task 3
 while working on the eslint issue, I tried to find if the issue is new or if it has been around for a while using bisect but I was not able to find a commit that introduced the issue. It seems like this has been an issue for a while and has not been noticed until now.
 
+also while working on the cxxgraph issue I could not find a known-good release to bisect from. The issue appears to be present at least as far back as v0.1.4, the earliest release tag where this MCVE compiles for me.
+
 # task 4
 After working on the MCVE, I also found a bad [issue](https://github.com/ZigRazor/CXXGraph/issues/497) description in the [cxxgrapgh project](https://github.com/ZigRazor/CXXGraph) describing a segfault behaviour in the weighted directed graph container, the issue had a single sentence description without tests or code, the maintainer commented asking for more details but the user did not respond so I looked at it and found that I reproduce a related failure without a path finding algorithm. That terminates with `std::bad_optional_access` rather than a direct segfault. maybe this will help the maintainer solve this issue if possible.
