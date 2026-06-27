@@ -7,3 +7,8 @@ The PR included tests for the behavior being removed, but it did not include a c
 for the second review I found a [pull request](https://github.com/rust-lang/rust-analyzer/pull/22645) in the [rust-lang/rust-analyzer](https://github.com/rust-lang/rust-analyzer) repository, request that adds an .await quick fix for type mismatches involving futures. The implementation correctly checked whether the future output matched the expected type, but it did not verify whether .await was legal at the expression’s location. I reproduced the issue in a synchronous function and in a non-async closure inside an async function, where the suggested fix still produced invalid Rust.
 
 [my comment](https://github.com/rust-lang/rust-analyzer/pull/22645#issuecomment-4821188122)
+
+#Task 2
+There are many pull requests that Im not proud, may be even a majority of them. one that stands out was a pr named `styling and permisions (mostly)`, I was working on a Django project and was supposed to update the UI of several pages and add permission rules for superusers.
+the pr was a mess, no description, no tests, does not reference an issue, no formatting, and I added features that were not mentioned or requested, breaking changes, changing order of content for unrelated pages, I even changed the data models. So yes, I was not proud of that PR, and I learned a lot from it after the conequences of it.
+If I were reviewing this PR today, I would request that it be split into smaller, focused changes. The permission logic should have included tests, the model changes should have been isolated and explained, and unrelated UI changes should have been removed from the scope. I would also ask for a clear description of the intended behavior and any migration or compatibility concerns.
