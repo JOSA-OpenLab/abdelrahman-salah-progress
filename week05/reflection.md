@@ -59,3 +59,11 @@ jobs:
 ```
 
 # Task 3
+
+I used act to run the GitHub Actions workflow locally before pushing it:
+
+`act push -W .github/workflows/portal-ci.yml -j portal`
+
+`act` executed the complete Node.js matrix inside Docker. Both Node.js 22.x and 24.x jobs completed successfully, including dependency installation, linting, tests, type-checking, and the production build.
+
+During setup, I initially installed a different program also named `act` using the fedora package manager `dnf`. After replacing it with `nektos/act`, the workflow ran correctly.
