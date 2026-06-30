@@ -20,7 +20,6 @@ The reported problem was narrow, but the PR implemented a general system for ide
 
 A simpler solution would have filtered the specific intrinsics feature or paths involved in the reported issue. That would have solved the current problem with less code and maintenance cost.
 
-#Task 4
 # Task 4 — Review Culture in rust-analyzer
 
 For this task, I examined several merged pull requests in the rust-analyzer project, including [#22618](https://github.com/rust-lang/rust-analyzer/pull/22618), [#22486](https://github.com/rust-lang/rust-analyzer/pull/22486), [#21319](https://github.com/rust-lang/rust-analyzer/pull/21319), [#22115](https://github.com/rust-lang/rust-analyzer/pull/22115), and [#22044](https://github.com/rust-lang/rust-analyzer/pull/22044).
