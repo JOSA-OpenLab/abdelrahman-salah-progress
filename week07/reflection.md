@@ -51,3 +51,11 @@ cosign verify-blob \
 I ran syft against a FastAPI project to generate a Software Bill of Materials then I used grype to scan the SBOM for vulnerabilities. grype found a dozen of vulnerabilities in the dependencies, but the highest risk one was a  medium severity vulnerability in the `starlette` package, which is `GHSA-86qp-5c8j-p5mr` also tracked as `CVE-2026-48710`, It stems from missing Host header validation, which allows attackers to send malformed requests that poison `request.url.path`. This discrepancy enables attackers to bypass path-based security controls and access restricted endpoints.
 
 ## task 4
+
+I ran OpenSSF Scorecard on my [libft project](https://github.com/Abusalah0/libft_42/releases/tag/v1.0.0) repository to evaluate its software supply-chain security. The initial report showed several low-scoring checks, including missing license information, no dependency update tool, and no SAST tool configured.
+
+To improve the repository, I added three security-related changes in this [pull request](https://github.com/Abusalah0/libft_42/pull/2):
+
+a LICENSE file to clearly define reuse terms,
+Dependabot configuration to automate dependency and GitHub Actions updates,
+a CodeQL workflow to add static application security testing for the C code.
