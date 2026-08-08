@@ -59,3 +59,5 @@ To improve the repository, I added three security-related changes in this [pull 
 a LICENSE file to clearly define reuse terms,
 Dependabot configuration to automate dependency and GitHub Actions updates,
 a CodeQL workflow to add static application security testing for the C code.
+
+Update: I ran OpenSSF Scorecard again on another project called the [esp-csi-rs](https://github.com/csi-rs/esp-csi-rs) repository. it showed multiple low-scoring checks, including missing license information, no dependency update tool, and no merge protection as well.
