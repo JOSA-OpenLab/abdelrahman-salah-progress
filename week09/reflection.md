@@ -29,3 +29,6 @@ Also added the governance file to my [libft](https://github.com/Abusalah0/libft_
 ## Task 5
 
 for this task I got the permission to work on the [csi-rs](https://github.com/csi-rs) project, enhancing and contributing to its codebase. I will be working on adding new features, fixing bugs, and improving the overall functionality of the project and community profile as well. this task is still WIP.
+
+Update:
+I have been actively contributing to the [csi-rs](https://github.com/csi-rs) organization, I have audited their codebase and identified several areas for improvement, first the documentation I added multiple docs such as governance. security and templates to thier base [.github repo](https://github.com/csi-rs/.github) I opened these 3 pull requests [1](https://github.com/csi-rs/.github/pull/2), [2](https://github.com/csi-rs/.github/pull/4), [3](https://github.com/csi-rs/.github/pull/5) and also I have been working on the [esp-csi-rs repo](https://github.com/csi-rs/esp-csi-rs), fixing bugs and adding new features to thier github actions. I have opened these 3 pull requests [1](https://github.com/csi-rs/esp-csi-rs/pull/23), [2](https://github.com/csi-rs/esp-csi-rs/pull/24), [3](https://github.com/csi-rs/esp-csi-rs/pull/26).
